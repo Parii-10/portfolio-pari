@@ -1,0 +1,76 @@
+.contact-container{
+  margin-left: 320px;
+  margin-top: 200px;
+  margin-right: 370px;
+}
+.contact-content{
+  display: flex;
+}
+.contact-left-side{
+  width: 300px;
+  margin-right: 140px;
+}
+.contact-right-side{
+  margin-top: 20px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form > label{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.contact-form > input {
+  padding: 15px;
+  font-size: 15px;
+  width: 500px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(192, 184, 184);
+}
+.contact-form > textarea{
+  padding: 15px;
+  font-size: 15px;
+  width: 500px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(192, 184, 184);
+}
+.mail{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.location > a{
+  color: white;
+}
+.contact-left-side > .phone{
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+.phone > a{
+  color: white;
+}
+.location{
+  display: flex;
+  margin-left: 22px;
+  align-items: center;
+}
+.location > .detail{
+  margin-left: 20px;
+}
+.contact-left-side > .phone > p{
+  margin-left: 20px;
+}
+.contact-form > button{
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  width: 160px;
+  margin-top: 18px;
+}

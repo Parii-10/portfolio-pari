@@ -1,0 +1,30 @@
+.photo > img{
+  border: 4px dotted white;
+  border-radius: 50%;
+}
+
+.about-container{
+  margin-left: 320px;
+  margin-top: 100px;
+}
+.about-container > h1{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.about-container > p{
+  margin-top: 0;
+  padding-top: 0;
+}
+.about-para-img{
+  display: flex;
+}
+.about-para-img > div > p{
+  width: 500px;
+  margin-right: 150px;
+  font-size: 15px;
+}
+.about-para-img > div > img {
+  margin-top: 50px;
+  width: 250px;
+  height: 350px;
+}

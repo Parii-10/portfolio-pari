@@ -1,0 +1,30 @@
+.home-container{
+  padding-top: 180px;
+  text-align: left;
+  margin-left: 320px;
+  padding-bottom: 0px;
+  margin-bottom: 70px;
+}
+.home-container > p{
+  font-size: 40px;
+  text-align: left;
+}
+.home-container > h1{
+  font-size: 70px;
+  padding-bottom: 0px;
+}
+.home-container > .intro{
+  font-size: 20px;
+  padding-top: 0px;
+}
+.home-container > button {
+  font-size: 20px;
+  margin-left: 170px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+}
+.home-container > .btn-home{
+  margin-left: 30px;
+}

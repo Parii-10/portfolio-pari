@@ -1,0 +1,48 @@
+.navbar-container{
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 99;
+}
+.navbar-container > p {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  color: #4a90e2;
+  transition: color  0.3s;
+  transition: font-size 0.3s;
+}
+.navbar-container p:hover {
+  color:  #2982dc; 
+  font-size: 100px;
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 100px ;
+}
+.nav-item > li{
+  margin: 20px;
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-link.active {
+  border-bottom: 2px solid #489bf4; 
+}
+
+.nav-link:hover {
+  color: #4c97e7; 
+}

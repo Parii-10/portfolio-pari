@@ -1,0 +1,17 @@
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  height: 99%;
+  margin-left: -7px;
+  padding-left: 50px;
+  padding-top: 180px;
+  margin-top: 90px;
+  position: fixed;
+  z-index: 109;
+}
+.sidebar-container > div{
+  border-left: 3px solid white;
+  height: 190px;
+  margin-left: 22px;
+  margin-top: 50px;
+}
