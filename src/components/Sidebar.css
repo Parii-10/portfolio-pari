@@ -15,3 +15,31 @@
   margin-left: 22px;
   margin-top: 50px;
 }
+
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed; /* Fix the sidebar at the bottom */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0;
+    width: 100%; /* Full width on mobile */
+    height: 60px; /* Fixed height for the bottom bar */
+    flex-direction: row; /* Horizontal layout for mobile */
+    align-items: center;
+    justify-content: space-around; /* Space out items */
+    padding: 0; /* Remove padding for a cleaner look */
+    background-color: #000000; /* Background color for visibility */
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    z-index: 109; /* Ensure it's above other elements */
+    margin-left: 20px;
+  }
+
+  .sidebar-container > div {
+    border-left: none; /* Remove left border */
+    border-top: 3px solid white; /* Add top border for each item */
+    height: 100%; /* Full height within the bottom bar */
+    width: auto; /* Adjust width as needed */
+    margin: 0 10px; /* Spacing between items */
+  }
+}

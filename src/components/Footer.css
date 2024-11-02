@@ -6,3 +6,14 @@
   align-items: center;
   justify-content: center;
 }
+/* Responsive Styles for Mobile Phones and Tablets */
+@media (max-width: 768px) {
+  .footer-container {
+    height: 120px; /* Reduced height for smaller screens */
+    flex-direction: column; /* Stack items vertically if needed */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 30px;
+  }
+
+  /* Additional styles for text or links in the footer can be added here */
+}

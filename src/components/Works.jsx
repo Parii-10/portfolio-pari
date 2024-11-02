@@ -20,8 +20,8 @@ function Works(){
       <p>___________________________________________________________________________________________________________________________</p>
       {projects.map((project, index) => (
         <div key={index} className="project">
-          <img src={project.imgSrc} alt={project.title} />
           <h3>{project.title}</h3>
+          <img src={project.imgSrc} alt={project.title} />
           <div className="project-detail">
             <p>{project.description}</p>
           </div>

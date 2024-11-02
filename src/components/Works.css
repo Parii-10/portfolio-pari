@@ -33,3 +33,41 @@
 .project-detail > p > span {
   color: rgb(129, 112, 112);
 }
+
+
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .works-container {
+    margin-left: 20px; /* Reduced left margin for smaller screens */
+    margin-top: 100px; /* Reduced top margin */
+  }
+
+  .project {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .project > img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; /* Allow image to take up to 90% of the width */
+  }
+
+  .project > h3 {
+    position: static; /* Reset position for mobile */
+    text-align: center; /* Center align title */
+    font-size: 20px; /* Reduced font size */
+    margin-top: 10px; /* Margin above title */
+  }
+
+  .project > .project-detail {
+    width: 80%; /* Full width for detail box */
+    margin-left: 80px; /* Reset left margin */
+    margin-top: -120px; /* Margin above detail box */
+  }
+
+  .project-detail > p {
+    font-size: 14px; /* Reduced font size for mobile */
+  }
+}

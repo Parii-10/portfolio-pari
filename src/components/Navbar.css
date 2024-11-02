@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   z-index: 99;
 }
 .navbar-container > p {
@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  margin-left: 100px ;
+  margin-left: 150px ;
 }
 .nav-item > li{
   margin: 20px;
@@ -45,4 +45,69 @@
 
 .nav-link:hover {
   color: #4c97e7; 
+}
+
+.nav-button {
+  margin-left: auto; /* Push the nav button to the right */
+}
+
+.nav-button > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 15px 40px; /* Less padding for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px ; /* Even less padding for mobile */
+  }
+  .nav-button {
+    margin-left: auto; /* Keep it to the right on mobile as well */
+  }
+
+  /* Display the menu button and hide nav items for mobile */
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    display: none; /* Hide the nav items initially */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000000;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 98;
+  }
+
+  .nav-item.open {
+    display: flex; /* Show the nav items when the menu is open */
+  }
+
+  .nav-item > li {
+    margin: 10px 0;
+  }
+
+  .navbar-container > p {
+    font-size: 40px;
+  }
+
+  .nav-button {
+    display: none; /* Hide the connect button in mobile view */
+  }
 }

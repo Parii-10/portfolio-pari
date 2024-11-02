@@ -28,3 +28,32 @@
   width: 250px;
   height: 350px;
 }
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .about-container {
+    margin-left: 20px; /* Reduced left margin for smaller screens */
+    margin-top: 50px; /* Reduced top margin */
+  }
+
+  .about-para-img {
+    flex-direction: row-reverse; /* Image on the right for mobile */
+    align-items: center; /* Center vertically align items */
+  }
+
+  .about-para-img > img {
+    width: auto; /* Allow image to be responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%; /* Max width for images on mobile */
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 20px; /* Space between image and paragraph on mobile */
+  }
+
+  .about-para-img > div > p {
+    width: auto; /* Allow paragraph to use full width */
+    margin-right: 0; /* Remove right margin */
+    font-size: 14px; /* Slightly smaller font size for readability */
+    text-align: left; /* Left align text for mobile */
+    margin-left: 40px; /* Space between image and paragraph on mobile */
+  }
+}

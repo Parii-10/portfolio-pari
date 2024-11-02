@@ -35,3 +35,33 @@
   font-size: 18px;
   width: 700px;
 }
+
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .experience-container {
+    margin-left: 20px; /* Reduced left margin for smaller screens */
+    margin-top: 100px; /* Reduced top margin */
+    margin-bottom: 50px; /* Reduced bottom margin */
+  }
+
+  .experience-container >div > h2 {
+    margin-left: 20px; /* Remove left margin for subheading */
+    font-size: 18px; /* Reduced font size for subheading */
+    text-align: left; /* Align text to the left */
+  }
+
+  .experience-container >div> h3 {
+    margin-left: 20px;
+    font-size: 18px; /* Reduced font size for h3 */
+  }
+
+  .experience-container > div>  .content {
+    margin-left: 20px;
+    width: 100%; /* Full width for content on smaller screens */
+    font-size: 16px; /* Reduced font size for better readability */
+  }
+  .experience-container > div > p{
+    margin-left: 20px;
+  }
+}

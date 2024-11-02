@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { IoMenu , IoClose  }  from "react-icons/io5";
 import "../components/Navbar.css";
@@ -13,7 +13,7 @@ function Navbar(){
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("home");
+  const [activeItem, setActiveItem] = useState("Home");
 
 
   const handleMenuClick = () => {
@@ -23,6 +23,13 @@ function Navbar(){
   const handleItemClick = (name) => {
     setActiveItem(name); 
   };
+
+  useEffect(() => {
+    const homeElement = document.getElementById("home");
+    if (homeElement) {
+      homeElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div className="navbar-container">
@@ -45,7 +52,7 @@ function Navbar(){
           </li>
         ))}
       </ul>
-      <button className="nav-button"><a href="https://linkedin.com/in/pari-sharma-92173b2a3" target="_blank">Connect with me</a></button>
+      <button className="nav-button"><a href="https://linkedin.com/in/pari-sharma-92173b2a3" target="_blank" rel="noopener norefferrer">Connect with me</a></button>
     </div>
   );
 }

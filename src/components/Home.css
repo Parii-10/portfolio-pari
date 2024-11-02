@@ -28,3 +28,36 @@
 .home-container > .btn-home{
   margin-left: 30px;
 }
+
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .home-container {
+    margin-left: 70px; /* Reduce left margin on small screens */
+    margin-right: 20px; /* Add right margin for small screens */
+    padding-top: 100px; /* Adjust top padding for smaller screens */
+  }
+
+  .home-container > p {
+    font-size: 28px; /* Smaller font size for paragraph */
+  }
+
+  .home-container > h1 {
+    font-size: 36px; /* Smaller font size for heading */
+  }
+
+  .home-container > .intro {
+    font-size: 16px; /* Smaller font size for intro */
+  }
+
+  .home-container > button {
+    font-size: 16px; /* Smaller font size for button */
+    margin-top: 10px; /* Maintain top margin for stacking */
+    padding: 8px 12px; /* Adjust padding for smaller buttons */
+    margin-left: 20px; /* Maintain left margin */
+  }
+
+  .home-container > .btn-home {
+    margin-left: 20px; /* Ensure the home button also has left margin */
+  }
+}
